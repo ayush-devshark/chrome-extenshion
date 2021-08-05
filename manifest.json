@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Voice Excercise Timer",
+    "version": "1.0.0",
+    "description": "Practice voice excercises with this timer",
+    "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "24": "icon.png",
+            "32": "icon.png"
+        },
+        "default_title": "Timer extenshion action title",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": ["storage", "alarms"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

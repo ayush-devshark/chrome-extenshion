@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 30rem;
+    height: 40rem;
+    background: rgba(167, 25, 25, 0.322);
+}
+
+.timer-box {
+    width: 80%;
+    height: 80%;
+    /* box-shadow: 0px 2px 4px #000; */
+    border: 0.2rem solid #000;
+    background-color: #f0d7b4;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+}
+
+h1 {
+    color: blue;
+}
