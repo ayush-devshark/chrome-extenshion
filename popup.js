@@ -1,6 +1,9 @@
 const timeEl = document.getElementById('time');
 const nameEl = document.getElementById('name');
 const timerEls = document.getElementById('timer');
+const startBtn = document.getElementById('start');
+const stopBtn = document.getElementById('stop');
+const resetBtn = document.getElementById('reset');
 
 function updateTimeEl() {
     const currentTime = new Date().toLocaleTimeString();
@@ -12,10 +15,26 @@ function updateTimeEl() {
     });
 }
 updateTimeEl();
-
 setInterval(() => {
     updateTimeEl();
 }, 1000);
+
+startBtn.addEventListener('click', () => {
+    chrome.storage.local.set({
+        isRunning: true,
+    });
+});
+stopBtn.addEventListener('click', () => {
+    chrome.storage.local.set({
+        isRunning: false,
+    });
+});
+resetBtn.addEventListener('click', () => {
+    chrome.storage.local.set({
+        timer: 0,
+        isRunning: false,
+    });
+});
 
 // chrome.action.setBadgeText(
 //     {

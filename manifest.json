@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Voice Excercise Timer",
+    "name": "Timer Extenshion",
     "version": "1.0.0",
-    "description": "Practice voice excercises with this timer",
+    "description": "Timer",
     "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
     "action": {
         "default_icon": {
